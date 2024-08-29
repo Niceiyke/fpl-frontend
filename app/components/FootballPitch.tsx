@@ -40,13 +40,13 @@ const FootballPitch: React.FC<FootballPitchProps> = ({ players }) => {
   return (
     <div className="bg-green-800 p-4 rounded-lg shadow-md  max-w-screen-md mx-auto  grid gap-2 overflow-y-auto scrollbar-thin scrollbar-thumb-green">
       {/* Goalkeeper */}
-      <PlayerCardList players={goalkeepers} title="Goalkeepers" />
+      <PlayerCardList players={goalkeepers} title="" />
       {/* Defenders */}
-      <PlayerCardList players={defenders} title="Defenders" />
+      <PlayerCardList players={defenders} title="" />
       {/* Midfielders */}
-      <PlayerCardList players={midfielders} title="Midfielders" />
+      <PlayerCardList players={midfielders} title="" />
       {/* Forwards */}
-      <PlayerCardList players={forwards} title="Forwards" />
+      <PlayerCardList players={forwards} title="" />
     </div>
   );
 };

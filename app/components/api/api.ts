@@ -31,7 +31,12 @@ export const  getExpectedPoint =async()=> {
     
     return res.data
   }
-
 }
 
-
+export const  getAllPlayer =async()=> {
+  const res =await axios.get('http://127.0.0.1:8000/api/players/get-players')
+  if( res.status ==200){
+    
+    return res.data
+  }
+}
